@@ -1,11 +1,12 @@
 import { useMemo, useState } from 'react';
-import { Movie, FilterMode, ViewMode } from './types';
-import { initialMovies } from './data/movies';
+import {FilterMode, ViewMode} from './types';
 import { MovieCard } from './components/MovieCard';
 import { Toolbar } from './components/Toolbar';
+import { useMovies } from './api/useMovies';
+
 
 function App() {
-    const [movies, setMovies] = useState<Movie[]>(initialMovies);
+    const { movies, setMovies, loading, error } = useMovies();
 
     const [filterMode, setFilterMode] = useState<FilterMode>('all');
     const [viewMode, setViewMode] = useState<ViewMode>('grid');
@@ -26,6 +27,10 @@ function App() {
             .filter(m => (filterMode === 'favorites' ? m.isFavorite : true))
             .filter(m => (q ? m.title.toLowerCase().includes(q) : true));
     }, [movies, filterMode, searchQuery]);
+
+
+    if (loading) return <p>Загрузка...</p>;
+    if (error) return <p style={{ color: 'red' }}>{error}</p>;
 
     return (
         <main className="container">
