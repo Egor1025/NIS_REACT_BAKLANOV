@@ -6,8 +6,12 @@
 
 ```bash
 git clone https://github.com/Egor1025/NIS_REACT_BAKLANOV.git
-cd NIS_REACT_BAKLANOV/hw_2
+cd NIS_REACT_BAKLANOV
+git switch HW_2
+cd hw_2
 
 npm i
 npm run dev
 ```
+
+Приложение будет доступно по `http://localhost:5173/`
