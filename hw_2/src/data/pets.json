@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "name": "Neon Tiger",
+    "species": "tiger",
+    "mood": "happy",
+    "energy": 80,
+    "level": 3,
+    "avatar": "/avatars/neon-tiger.png"
+  },
+  {
+    "id": "2",
+    "name": "Cyber Fox",
+    "species": "fox",
+    "mood": "neutral",
+    "energy": 60,
+    "level": 2,
+    "avatar": "/avatars/cyber-fox.png"
+  },
+  {
+    "id": "3",
+    "name": "Quantum Owl",
+    "species": "owl",
+    "mood": "calm",
+    "energy": 90,
+    "level": 4,
+    "avatar": "/avatars/quantum-owl.png"
+  },
+  {
+    "id": "4",
+    "name": "Glitch Cat",
+    "species": "cat",
+    "mood": "playful",
+    "energy": 50,
+    "level": 1,
+    "avatar": "/avatars/glitch-cat.png"
+  },
+  {
+    "id": "5",
+    "name": "Hologram Dog",
+    "species": "dog",
+    "mood": "happy",
+    "energy": 70,
+    "level": 2,
+    "avatar": "/avatars/hologram-dog.png"
+  }
+]
