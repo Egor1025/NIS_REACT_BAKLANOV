@@ -1,4 +1,5 @@
 import { Component, type ErrorInfo, type PropsWithChildren, type ReactNode } from 'react'
+import i18next from 'i18next'
 import { Button } from '@/shared/ui/button/Button'
 
 interface ErrorBoundaryState {
@@ -28,14 +29,14 @@ export class ErrorBoundary extends Component<PropsWithChildren, ErrorBoundarySta
       return (
         <section className="centered-page">
           <div className="state-block state-block_error">
-            <h2>Unexpected error</h2>
-            <p>Please reload the page.</p>
+            <h2>{i18next.t('errorBoundary.title')}</h2>
+            <p>{i18next.t('errorBoundary.description')}</p>
             <Button
               onClick={() => {
                 window.location.reload()
               }}
             >
-              Reload
+              {i18next.t('errorBoundary.reload')}
             </Button>
           </div>
         </section>

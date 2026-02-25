@@ -116,5 +116,10 @@
     "unauthorized": "Session expired. Please sign in again.",
     "notFound": "Data not found.",
     "invalidCredentials": "Invalid username or password."
+  },
+  "errorBoundary": {
+    "title": "Unexpected error",
+    "description": "A critical UI error occurred. Please reload the page.",
+    "reload": "Reload"
   }
 }

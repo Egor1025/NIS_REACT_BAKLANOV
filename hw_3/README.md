@@ -82,11 +82,11 @@ SPA административная панель для e-commerce систем
 ```text
 src/
  ├── app/         # providers, router, store, i18n, global styles
- ├── pages/       # route-level pages
- ├── widgets/     # layout и крупные UI-блоки
- ├── features/    # бизнес-фичи (auth, settings, product-catalog)
  ├── entities/    # доменные сущности (user, product)
- └── shared/      # ui-kit, утилиты, base api, config
+ ├── features/    # бизнес-фичи (auth, settings, product-catalog)
+ ├── pages/       # route-level pages
+ ├── shared/      # ui-kit, утилиты, base api, config
+ └── widgets/     # layout и крупные UI-блоки
 ```
 
 Ключевые правила:
@@ -103,34 +103,29 @@ npm install
 npm run dev
 ```
 
-Проверка качества:
-
-```bash
-npm run lint
-npm run build
-```
-
 ## Тестовые данные для входа
-
-DummyJSON demo user:
 
 - `username: emilys`
 - `password: emilyspass`
 
 ## Скриншоты ключевых сценариев
 
-### Login
+### Логин
 
 ![Login](docs/screenshots/login.png)
 
-### Dashboard
+### Дашборд
 
 ![Dashboard](docs/screenshots/dashboard.png)
 
-### Products (search + pagination)
+### Продукты
 
 ![Products](docs/screenshots/products.png)
 
-### Settings (theme/language/page size)
+### Профиль
+
+![Profile](docs/screenshots/profile.png)
+
+### Настройки
 
 ![Settings](docs/screenshots/settings.png)

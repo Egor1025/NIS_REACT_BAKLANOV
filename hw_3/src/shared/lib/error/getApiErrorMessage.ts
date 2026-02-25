@@ -8,10 +8,6 @@ const isFetchBaseQueryError = (error: ApiError): error is FetchBaseQueryError =>
   return Boolean(error && typeof error === 'object' && 'status' in error)
 }
 
-const hasMessage = (data: unknown): data is { message: string } => {
-  return Boolean(data && typeof data === 'object' && 'message' in data && typeof data.message === 'string')
-}
-
 export const getApiErrorMessage = (t: TFunction<'common'>, error: ApiError): string => {
   if (!error) {
     return t('errors.generic')
@@ -35,14 +31,6 @@ export const getApiErrorMessage = (t: TFunction<'common'>, error: ApiError): str
     if (error.status === 'FETCH_ERROR') {
       return t('errors.network')
     }
-
-    if (hasMessage(error.data)) {
-      return error.data.message
-    }
-  }
-
-  if ('message' in error && typeof error.message === 'string') {
-    return error.message
   }
 
   return t('errors.generic')
