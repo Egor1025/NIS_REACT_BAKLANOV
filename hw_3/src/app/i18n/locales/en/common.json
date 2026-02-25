@@ -1,0 +1,120 @@
+{
+  "app": {
+    "title": "E-Commerce Admin",
+    "subtitle": "Administrative panel"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "products": "Products",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "common": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "save": "Save",
+    "cancel": "Cancel",
+    "back": "Back",
+    "open": "Open",
+    "search": "Search",
+    "language": "Language",
+    "theme": "Theme",
+    "pageSize": "Page size",
+    "price": "Price",
+    "rating": "Rating",
+    "category": "Category",
+    "stock": "Stock",
+    "brand": "Brand",
+    "name": "Name",
+    "email": "Email",
+    "username": "Username",
+    "password": "Password",
+    "fullName": "Full name",
+    "apply": "Apply"
+  },
+  "auth": {
+    "title": "Sign in",
+    "subtitle": "Log in to the admin panel",
+    "username": "Username",
+    "password": "Password",
+    "submit": "Sign in",
+    "noAccount": "No account yet?",
+    "createAccount": "Create",
+    "demoHint": "DummyJSON demo user: emilys / emilyspass",
+    "validation": {
+      "usernameRequired": "Username is required",
+      "passwordRequired": "Password is required",
+      "passwordMin": "Password must be at least 4 characters"
+    }
+  },
+  "register": {
+    "title": "Registration",
+    "description": "DummyJSON does not support full registration. This page is a UI stub.",
+    "submit": "Register",
+    "backToLogin": "Back to login"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "greeting": "Welcome, {{name}}",
+    "description": "Use the sidebar to manage products, profile and application settings.",
+    "goProducts": "Open catalog",
+    "cards": {
+      "api": "Data source",
+      "auth": "Session state",
+      "settings": "Current theme"
+    }
+  },
+  "products": {
+    "title": "Product Catalog",
+    "searchLabel": "Search by title",
+    "searchPlaceholder": "Type product title",
+    "empty": "No products found",
+    "pageInfo": "Page {{page}} of {{totalPages}}",
+    "total": "Total: {{total}}",
+    "details": "Product details",
+    "backToList": "Back to list"
+  },
+  "profile": {
+    "title": "User profile",
+    "session": "Current session",
+    "logout": "End session"
+  },
+  "settings": {
+    "title": "Application settings",
+    "language": "Interface language",
+    "theme": "Theme",
+    "pageSize": "Catalog page size",
+    "languageOptions": {
+      "ru": "Russian",
+      "en": "English"
+    },
+    "themeOptions": {
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "savedHint": "Changes are applied instantly and persisted in localStorage."
+  },
+  "logout": {
+    "title": "Logout",
+    "description": "Session cleared. Redirecting to login..."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "Requested route does not exist.",
+    "goHome": "Go to dashboard"
+  },
+  "states": {
+    "loading": "Loading...",
+    "retry": "Retry"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "network": "Network error. Check your connection.",
+    "server": "Server is temporarily unavailable.",
+    "unauthorized": "Session expired. Please sign in again.",
+    "notFound": "Data not found.",
+    "invalidCredentials": "Invalid username or password."
+  }
+}
